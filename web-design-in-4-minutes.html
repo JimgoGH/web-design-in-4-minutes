@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web Design in 4 minutes</title>
+    <title>4分钟了解网页设计</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header id="header">
       <img id="logo" src="jt.png" alt="JT logo">
-      <h1>Web Design in 4 minutes</h1>
+      <h1>4分钟了解网页设计</h1>
       <p>
-        <a href="http://jgthms.com" target="_blank">by Jeremy Thomas</a>
+        <a href="http://jgthms.com" target="_blank">原文： Jeremy Thomas</a>
       </p>
     </header>
 
     <main>
       <section id="start">
-        <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your <em>own</em> website. Before you publish it on the internet, you want to make it look attractive, professional, or at least <em>decent</em> to look at.</p>
-        <p>What is the <a href="#content">first thing</a> you need to work on?</p>
+        <p>比如说，你有一个产品, 或是一个作品集, 或仅仅是一个想法，想在 <em>你自己的</em> 网页上分享给任何人。 在你发布到网上之前，你希望这些看上去要吸引人，有个性，至少是 <em>得体</em> 得体的。</p>
+        <p>那么什么事是你 <a class="step" data-step="0" href="#content">第一步</a> 要去做的呢？</p>
       </section>
 
       <section id="content">
-        <h2>Content</h2>
-        <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be established as an afterthought.</p>
-        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
-        <p>Let's assume you've already finalised the content you want to publish and just created an empty <code>style.css</code> file, what is the <a href="#centering">first rule</a> you can write?</p>
+        <h2>内容</h2>
+        <p>页面<strong>设计</strong> 的目标是提高内容呈现的吸引力。显然内容作为网页的 <strong>首要</strong> 元素应当是完整的，而不是当作后来才添加进来的东西。</p>
+        <p>文本内容，就像你正在读的这一段，组成了页面90%以上的部分。将文本内容添加上样式会对页面的呈现有很大的帮助。</p>
+        <p>假设你已经完成了你要呈现的内容，并且你刚新建了一个空白的<code>style.css</code>文件，那么什么才是你<a class="step" data-step="1" href="#centering">首先</a> 要写的规则呢？</p>
       </section>
 
       <section id="centering">
-        <h2>Centering</h2>
-        <p>Long lines of text can be hard to parse, and thus hard to <strong>read</strong>. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
+        <h2>居中</h2>
+        <p>连续文本过长是不易辨析的，以至不易<strong>阅读</strong>。为每行设置一个字符长度的限制，能极大提高一大块文本的可读性和吸引力。</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">margin</span>: <span class="number">0</span> auto;
   <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
 }</pre>
-        <p>After styling the text <em>blocks</em>, what about styling the <a href="#font-family">text itself</a>?</p>
+        <p>为文本<em>块</em>添加了样式之后，那么关于<a class="step" data-step="2" href="#font-family">文字自身</a>的样式呢？</p>
       </section>
 
       <section id="font-family">
-        <h2>Font family</h2>
-        <p>The browser's font defaults to <code>"Times"</code>, which can look unappealing (mostly because it is the "unstyled" font). Switching to a <strong>sans-serif</strong> font like <code>"Helvetica"</code> or <code>"Arial"</code> can vastly improve the look of your page.</p>
+        <h2>字体</h2>
+        <p>浏览器默认的字体是<code>"Times"</code>（译注：中文是"宋体"），一种不太吸引人的字体 (主要因为是这种字体是“未样式化的”). 选择一种<strong>无衬</strong> 字体，如 <code>"Helvetica"</code> 或者 <code>"Arial"</code> 能极大地提高</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
 }</pre>
-        <p><em>If you want to stick with a serif font, try <code>"Georgia"</code>.</em></p>
-        <p>While this makes the text more <em>appealing</em>, let's also make it <a href="#spacing">more readable</a>.</p>
+        <p><em>如果你想使用一种有衬字体，尝试 <code>"Georgia"</code>字体。</em></p>
+        <p>在让文字变得更具<em>吸引力</em>的同时，让我们使文字 <a class="step" data-step="3" href="#spacing">更加可读</a>。</p>
       </section>
 
       <section id="spacing">
-        <h2>Spacing</h2>
-        <p>When a page looks "broken" to a user, it's usually a <strong>spacing</strong> issue. Providing space both <em>around</em> and <em>within</em> your content can increase the appeal of your page.</p>
+        <h2>间隙</h2>
+        <p>在用户看了，一个页面显得很“破碎”，一般都是 <strong>间隙</strong> 的问题。为页面内容提供一个 <em>围绕</em> 且 <em>不溢出</em> 的间隙，会提高页面的吸引力。</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">line-height</span>: <span class="number">1.5</span>;
   <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
@@ -59,27 +59,27 @@
   <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
   <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
 }</pre>
-        <p>While the layout has greatly improved so far, let's apply more <a href="#color-contrast">subtle changes</a>.</p>
+        <p>目前布局已经得到了极大的改善, 我们加上更多 <a class="step" data-step="4" href="#color-contrast">细节调整</a>。</p>
       </section>
 
       <section id="color-contrast">
-        <h2>Color &amp; contrast</h2>
-        <p>Black text on a white background can be harsh on the eyes. Opting for a softer shade of black for body text makes the page more <strong>comfortable</strong> to read.</p>
+        <h2>颜色 和 反差</h2>
+        <p>黑色文字在白色背景上是刺眼的. 为主体文本选择一种柔和的黑色使页面阅读显得更 <strong>舒服</strong> 。</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">color</span>: <span class="number">#555</span>;
 }</pre>
-        <p>And in order to keep a decent level of <strong>contrast</strong>, let's pick a darker shade for <strong>important</strong> words</p>
+        <p>为了同时保持得体的<strong>反差</strong>，我们为 <strong>关键词</strong> 选择一种深暗色</p>
 <pre><span class="selector">h1</span>,
 <span class="selector">h2</span>,
 <span class="selector">strong</span> {
   <span class="attribute">color</span>: <span class="number">#333</span>;
 }</pre>
-        <p>While most of the page has been improved visually, some elements (like the code snippets) still seem <a href="#balance">out of place</a>.</p>
+        <p>当页面的大部分看上去得到改进, 一些元素（如代码片段）依旧显得 <a class="step" data-step="5" href="#balance">不合适</a>。</p>
       </section>
 
       <section id="balance">
-        <h2>Balance</h2>
-        <p>It only takes a few additional touches to correct the balance of the page:</p>
+        <h2>匀称</h2>
+        <p>仅需要几步就能修正页面的匀称:</p>
 <pre><span class="selector">code</span>,
 <span class="selector">pre</span> {
   <span class="attribute">background</span>: <span class="number">#eee</span>;
@@ -93,21 +93,21 @@
 <span class="selector">pre</span> {
   <span class="attribute">padding</span>: <span class="number">1</span>em;
 }</pre>
-        <p>At this point, you might want to make your page stand out and give it <a href="#primary-color">identity</a>.</p>
+        <p>此刻，你或许想使你的页面更突出 <a class="step" data-step="6" href="#primary-color">个性</a>。</p
       </section>
 
       <section id="primary-color">
-        <h2>Primary color</h2>
-        <p>Most brands have a <strong>primary color</strong> that acts as a visual accent. On a website, this accent can be used to provide emphasis on interactive elements, like <strong>links</strong>.</p>
+        <h2>基色</h2>
+        <p>大多数商标都会有个<strong>基色</strong> 作为色调. 在一个网站中, 这种色调可以用于强调一些交互的元素, 如 <strong>超链接</strong>。</p>
 <pre><span class="selector">a</span> {
   <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
 }</pre>
-        <p>But to keep the balance, we will need some <a href="#secondary-colors">additional colors</a>.</p>
+        <p>不过要保持匀称感，我们需要一些 <a class="step" data-step="7" href="#secondary-colors">别的颜色</a>。</p>
       </section>
 
       <section id="secondary-colors">
-        <h2>Secondary colors</h2>
-        <p>The accent color can be complemented with more <em>subtle</em> shades, to be used on borders, backgrounds, or even the body text.</p>
+        <h2>间色</h2>
+        <p>色调可以辅以 <em>精细</em> 阴影, 可以使用在边框，背景，甚至是主体文本。</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">color</span>: <span class="number">#566b78</span>;
 }
@@ -122,27 +122,27 @@
 <span class="selector">pre</span> {
   <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
 }</pre>
-        <p>Having changed the shades, why not change the <a href="#custom-font">shapes</a>...</p>
+        <p>既然改变了阴影，为何不改变<a class="step" data-step="8" href="#custom-font">形状</a>...</p>
       </section>
 
       <section id="custom-font">
-        <h2>Custom font</h2>
-        <p>Since text is the main content of a webpage, using a <strong>custom font</strong> gives the page even more noticeable identity.</p>
-        <p>While you can embed your own webfont or use an online service like <a href="https://typekit.com" target="_blank">Typekit</a>, let's use <code>"Roboto"</code> from the free <a href="https://fonts.google.com" target="_blank">Google Fonts</a> service:</p>
+        <h2>个性化字体</h2>
+        <p>既然文本是整个网页的主要内容, 使用一种 <strong>个性化字体</strong>会给网页带来更多特色。</p>
+        <p>你可以嵌入你自己的网页字体，或使用一种在线服务如 <a href="https://typekit.com/" target="_blank">Typekit</a>,让我们使用 <code>"Roboto"</code> 字体，来自 <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> 服务:（译注：大陆地区要体验该项服务是困难的。）</p>
 <pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
 
 <span class="selector">body</span> {
   <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
 }</pre>
-        <p>After enhancing your identity through <em>text</em>, how about adding a <a href="#images">thousand words</a>...</p>
+        <p>在提升你 <em>文本</em>的个性后, 不如再加上<a class="step" data-step="9" href="#images">千言万语</a>...</p>
       </section>
 
       <section id="images">
         <h2>
           <img src="images.png" alt="Spongebob rainbow meme saying 'Images'">
         </h2>
-        <p>Graphics and icons can be used either as ornaments to support your content, or actively take part in the message you want to convey.</p>
-        <p>Let's enhance our header with a nice <strong>background image</strong> from <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a></p>
+        <p>图片和图标能用于作为支持你内容的装饰, 或作为一个你想要传达的观点</p>
+        <p>让我们为页眉添加一个<strong>背景图片</strong>，从 <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a>挑一张</p>
 <pre><span class="selector">header</span> {
   <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
   <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
@@ -153,7 +153,7 @@
   <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
   <span class="attribute">text-align</span>: center;
 }</pre>
-        <p>Let's also add a <strong>logo</strong></p>
+        <p>我们同时添加一个 <strong>logo（标志）</strong></p>
 <pre><span class="selector">header img</span> {
   <span class="attribute">display</span>: inline-block;
   <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
